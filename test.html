@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Address and Map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        footer {
+            background-color: #0E2E50;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #B7773A;
+        }
+
+        .footer-section {
+            margin-bottom: 20px;
+        }
+
+        .google-map {
+            border: 0;
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Address Section -->
+                <div class="col-md-4 footer-section">
+                    <h5>Our Office</h5>
+                    <p>
+                        Mediture Consultancy LLP<br>
+                        1234 Medical Plaza, Suite 500<br>
+                        New York, NY 10001, USA<br>
+                        Phone: +1 (234) 567-8901<br>
+                        Email: info@meditureconsultancy.com
+                    </p>
+                </div>
+                
+                <!-- Google Map Section -->
+                <div class="col-md-4 footer-section">
+                    <h5>Find Us Here</h5>
+                    <iframe class="google-map"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwZku-FSUpzsRchtdBikKmho&key=https://www.google.com/maps/place/Kottapadi,+Kerala/@10.6227209,76.0273312,16z/data=!3m1!4b1!4m6!3m5!1s0x3ba79454f82e99c1:0x1a9a0a29065d1b72!8m2!3d10.6225424!4d76.0362897!16zL20vMGZ6YzFw?entry=ttu">                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <!-- Social Media & Copyright -->
+                <div class="col-md-4 footer-section">
+                    <h5>Stay Connected</h5>
+                    <p>Follow us on:</p>
+                    <p>
+                        <a href="#">Facebook</a> | 
+                        <a href="#">LinkedIn</a> | 
+                        <a href="#">Twitter</a>
+                    </p>
+                    <p>© 2024 Mediture Consultancy LLP. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

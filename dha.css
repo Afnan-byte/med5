@@ -1,0 +1,118 @@
+.carousel-inner img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption h1, .carousel-caption h3, .carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.carousel-caption p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ddd;
+}
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-width: 180px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B7773A;
+}
+
+.content-box {
+    background-color: #c1bebb;
+    background-image: linear-gradient(90deg, #0E2E50,white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.content-box img {
+    max-width: 100%; /* Ensures the image is responsive */
+    border-radius: 10px;
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-box p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #B7773A;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: #f7f7f7; */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #B7773A;
+}
+
+.contact-form .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #B7773A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #9c5f2e;
+}
