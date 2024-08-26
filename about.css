@@ -14,7 +14,7 @@
 
 
 .contact-box {
-    background-color: #0E2E50;
+    background-color: #0C3C35;
     padding: 10px 0;
     color: white;
     text-align: center;
@@ -57,7 +57,7 @@
 
 .navbar-nav .nav-link {
     font-size: 18px;
-    color: #0E2E50;
+    color: #0C3C35;
     margin: 0 10px;
     transition: color 0.3s;
 }
@@ -72,7 +72,7 @@
     padding: 20px;
     height: 300px; /* Adjust the height as needed */
     margin-top: 30px; /* Add top margin for spacing */
-    background-image: linear-gradient(90deg,#0E2E50 , #B7773A );
+    background-image: linear-gradient(90deg,#0C3C35 , #B7773A );
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -126,7 +126,7 @@ h1 {
 }
 
 .mission-text h2 {
-    color: #0E2E50;
+    color: #0C3C35;
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
@@ -159,7 +159,7 @@ h1 {
     }
 }
 footer {
-    background-color: #0E2E50;
+    background-color: #0C3C35;
     color: #fff;
     padding: 40px 0;
     text-align: center;
