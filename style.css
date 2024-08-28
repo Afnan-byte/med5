@@ -2,6 +2,10 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333;
 }
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* Existing CSS */
 .contact-box {
     background-color: #0C3C35;
     padding: 10px 0;
@@ -17,7 +21,6 @@ body {
     margin-right: 5px;
     color: #B7773A;
 }
-
 .social-media {
     display: inline-block;
     margin-left: 15px;
@@ -31,6 +34,14 @@ body {
 .social-media a:hover {
     color: #B7773A;
 }
+
+/* Media Query to hide social media icons on phone view */
+@media (max-width: 767px) {
+    .social-media {
+        display: none;
+    }
+}
+
 
 .navbar {
     background-color: #ffffff;
@@ -273,7 +284,8 @@ h1::after {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+   
    
     gap: 15px;
    
@@ -487,6 +499,56 @@ body {
         bottom: 10px;
     }
 }
-#shadow-host-companion {
+
+
+
+
+
+#shadow-host-companion{
+    display: none;
+}
+
+.review-container {
+    padding: 20px;
+}
+
+.review-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.review-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0E2E50;
+}
+
+.review-rating {
+    color: #FFD700;
+}
+
+.review-text {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.review-box.hidden {
     display: none;
 }
