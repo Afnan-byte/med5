@@ -99,7 +99,7 @@ body {
     }
 
     .carousel-caption p {
-        font-size: 8px; }
+        display: none; }
 
     .carousel-caption {
         bottom: 20px; 
