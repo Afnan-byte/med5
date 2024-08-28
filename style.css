@@ -92,15 +92,14 @@ body {
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .carousel-caption h1 {
-        font-size: 8px; /* Reduce the font size for smaller screens */
+        font-size: 16px; 
     }
 
     .carousel-caption p {
-        font-size: 8px; /* Adjust paragraph font size */
-    }
+        font-size: 8px; }
 
     .carousel-caption {
-        bottom: 20px; /* Move the caption slightly up if needed */
+        bottom: 20px; 
     }
 }
 
