@@ -74,6 +74,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
+    max-width: 100%; /* Ensures text doesn't overflow the screen */
 }
 
 .carousel-caption h1 {
@@ -87,6 +88,23 @@ body {
     font-weight: 300;
     color: #ddd;
 }
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .carousel-caption h1 {
+        font-size: 28px; /* Reduce the font size for smaller screens */
+    }
+
+    .carousel-caption p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .carousel-caption {
+        bottom: 20px; /* Move the caption slightly up if needed */
+    }
+}
+
+
 
 section {
     padding: 60px 0;
