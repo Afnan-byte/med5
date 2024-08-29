@@ -86,3 +86,8 @@ button:hover {
 .navbar-nav .nav-link:hover {
     color: #B7773A;
 }
+.form-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}

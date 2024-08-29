@@ -75,7 +75,7 @@
                 <form action="mailto:Mediturempm@gmail.com" method="post" enctype="text/plain">
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <input type="text" class="form-control" id="name1" name="name" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Your Email</label>
@@ -83,13 +83,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="number" class="form-label">Phone</label>
-                        <input type="text" class="form-control" id="email" name="number" required>
+                        <input type="text" class="form-control" id="phone" name="number" required>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        <textarea class="form-control" id="body" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" onclick="sendEmail()">Send Message</button>
                 </form>
             </div>
         </div>
@@ -157,6 +157,25 @@
     
     
         <!--------Footer--------------->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "info@mediture.in",
+                Password: "288427A32E35CD4325E411D4416194B2C790",
+                To: 'mediturempm@gmail.com',
+                From: "info@mediture.in",
+                Name:document.getElementById("name1").value,
+                Phone:document.getElementById("phone").value,
+                Subject: document.getElementById("subject").value,
+                Body: document.getElementById("body").value,
+                Port: 2525
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-J0XWcGAG6+R6/xySHghm5ydwHTXJRq5OhfpThV0u81An7nd7yJtBOisV+ERvRjmI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

@@ -11,26 +11,34 @@ body {
     padding: 10px 0;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .contact-box .contact-info {
-    display: inline-block;
-    margin: 0 15px;
     font-size: 16px;
+    margin: 0;
 }
+
 .contact-box .contact-info i {
     margin-right: 5px;
     color: #B7773A;
+    padding-left: 30px;
 }
+
 .social-media {
-    display: inline-block;
-    margin-left: 15px;
+    display: flex;
+    margin-left: auto;
 }
+
 .social-media a {
     color: white;
     margin: 0 8px;
     font-size: 18px;
     transition: color 0.3s ease;
 }
+
 .social-media a:hover {
     color: #B7773A;
 }
@@ -41,6 +49,7 @@ body {
         display: none;
     }
 }
+
 
 
 .navbar {
@@ -572,4 +581,26 @@ body {
 
 .review-box.hidden {
     display: none;
+}
+
+footer {
+    background-color: #0C3C35;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #B7773A;
+}
+
+.footer-section {
+    margin-bottom: 20px;
 }

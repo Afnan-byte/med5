@@ -75,7 +75,7 @@
                 <form action="mailto:Mediturempm@gmail.com" method="post" enctype="text/plain">
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <input type="text" class="form-control" id="name1" name="name" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Your Email</label>
@@ -83,13 +83,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="number" class="form-label">Phone</label>
-                        <input type="text" class="form-control" id="email" name="number" required>
+                        <input type="text" class="form-control" id="phone" name="number" required>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        <textarea class="form-control" id="body" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" onclick="sendEmail()">Send Message</button>
                 </form>
             </div>
         </div>
@@ -152,6 +152,27 @@
             </div>
         </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+       
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "info@mediture.in",
+                Password: "288427A32E35CD4325E411D4416194B2C790",
+                To: 'mediturempm@gmail.com',
+                From: "info@mediture.in",
+                Name:document.getElementById("name1").value,
+                Phone:document.getElementById("phone").value,
+                
+                Body: document.getElementById("body").value,
+                Port: 2525
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+ 
     
     <!-- Font Awesome for Social Media Icons -->
     
